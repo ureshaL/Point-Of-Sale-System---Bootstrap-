@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Uresha POS System</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+
+<!--Common Section Start-->
+<nav id="nav-bar-main" class="navbar navbar-expand-md navbar-dark bg-light sticky-top w-100">
+    <img class="float-left" height="75px" src="image/rsz_logo.png" alt="logo image">
+    <a id="title-text" class="navbar-brand font-weight-bold " href="#">Uresha POS System</a>
+    <button class="navbar-toggler bg-success" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto" style="font-size: 1em">
+            <li class="nav-item">
+                <a class="nav-link text-primary" href="index.html">Home </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-primary" href="order.html">Orders <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-primary" href="item.html">Items</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Others
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="customer.html">Customers</a>
+                    <a class="dropdown-item" href="#">Employees</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Settings</a>
+                    <a class="dropdown-item" href="#">About</a>
+                </div>
+            </li>
+        </ul>
+        <div>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#"><i class="fas fa-user-plus"></i>Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#"><i class="fas fa-sign-out-alt"></i>Log Out</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!----------------------->
+<div class="container mt-4">
+    <!--main tile-->
+    <div class="bg-light main-title mb-0">
+        <h2><i class="fas fa-shopping-cart"></i> Orders</h2>
+    </div>
+    <div class="front-nav-bar ">
+        Home > <b>Orders</b>
+    </div>
+
+    <div class="jumbotron pt-4">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card mb-3">
+                    <div class="card-header bg-success">Customer Details</div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group form-inline">
+                                <label>Customer :</label>
+                                <select class="form-control col-12 col-xl-auto">
+                                    <option>C001</option>
+                                    <option>C002</option>
+                                    <option>C003</option>
+                                    <option>C004</option>
+                                    <option>C005</option>
+                                </select>
+                                <button class="btn btn-info col-12 col-xl-auto mt-2 mt-xl-0 ml-0 ml-xl-2">New Customer</button>
+                            </div>
+                            <div class="form-group">
+                                <label>Address :</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Tel :</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Credit Limit :</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header bg-success">Invoice Details</div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label>Date :</label>
+                                <input type="date" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Order ID :</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-lg-0 mt-3">
+                <div class="card">
+                    <div class="card-header bg-success">Item Select</div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group form-inline">
+                                <label>Item :</label>
+                                <select class="form-control">
+                                    <option>Coca-Cola 1L</option>
+                                    <option>Surf XL 500g</option>
+                                </select>
+                            </div>
+                            <div class="form-group form-inline">
+                                <label>Price :</label>
+                                <input type="text" class="form-control col-12 col-xl-4">
+                                <label class="mt-3 mt-xl-0 ml-0 ml-xl-2">Quantity :</label>
+                                <input type="text" class="form-control col-12 col-xl-3">
+                            </div>
+                            <hr>
+                            <div class="text-center">Order Item</div>
+                            <hr>
+                            <div class="form-group">
+                                <label>Order Quantity :</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Credit Limit :</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group text-right">
+                                <button class="btn btn-danger col-12 col-sm-auto">Place Order</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--order table-->
+        <div class="col-md-12 mt-4" style="height:180px; overflow-y: scroll">
+        <table class="table table-bordered">
+            <thead style="background: #00bfa5">
+            <tr>
+                <th>Item Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+            </tr>
+            </thead>
+            <tbody class="bg-light">
+
+            </tbody>
+        </table>
+        </div>
+        <!---------->
+        <section class="content-box-2 p-4 mt-4">
+            <span id="total-text">Total : 00.0Rs/=</span>
+            <br><br>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="form-group form-inline">
+                        <label>Cash</label>
+                        <input type="text" class="form-control col-12 col-lg-auto">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="form-group form-inline">
+                        <label>Balance</label>
+                        <input type="text" class="form-control col-12 col-lg-auto">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="form-group form-inline">
+                        <label>Discount</label>
+                        <input type="text" class="form-control col-12 col-lg-auto">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="menu-button-group float-right" style="margin-top: 10px;">
+            <div class="center-on-lg">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-warning">Clear</button>
+                    <button type="button" class="btn btn-success">Renew Order</button>
+                    <button type="button" class="btn btn-danger">Submit Order</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--footer-->
+<div class="footer-text btn-dark text-center">Developed by Uresha Lakshani @ IJSE</div>
+
+<script type="application/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="application/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
